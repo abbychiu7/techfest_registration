@@ -45,4 +45,10 @@ if duplicates:
         print(f"\nDuplicate name found: {name}")
 else:
     print("\nNo duplicate names.")
+track_summary = {}
+for p in participants:
+    track_summary[p['track']] = track_summary.get(p['track'], 0) + 1
 
+print("\nParticipants per track:")
+for track, count in track_summary.items():
+    print(f"{track}: {count}")
