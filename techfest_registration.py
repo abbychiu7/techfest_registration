@@ -11,7 +11,7 @@ RESET = "\033[0m"  # reset to default
 
 # Welcome messages
 print(f"{HEADER}\nWelcome to SMIT TechFest!{RESET}")
-print(f"{INFO}Organized by April Abegail B. Chiu of APPDAET BTCS1{RESET}")
+print(f"{INFO}Submitted by April Abegail B. Chiu of APPDAET BTCS1{RESET}")
 print("-" * 50)
 
 # Participant registration
