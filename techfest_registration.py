@@ -23,4 +23,10 @@ for i in range(num_participants):
 print("\nRegistered Participants:")
 for idx, p in enumerate(participants, 1):
     print(f"{idx}. {p['name']} - {p['track']}")
+unique_tracks = set(p['track'] for p in participants)
 
+print("\nTracks offered in this event:")
+print(", ".join(unique_tracks))
+
+if len(unique_tracks) < 2:
+    print("Not enough variety in tracks.")
